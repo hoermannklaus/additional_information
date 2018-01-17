@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2018-01-15" product-name="additional_information">
+    <header/>
+    <body>
+
+      <!-- GENERAL -->
+      <trans-unit id="tt_content.backend.showExtendedInfos">
+        <source>Show additional information</source>
+      </trans-unit>
+      <trans-unit id="tt_content.heading">
+        <source>Heading</source>
+      </trans-unit>
+      <trans-unit id="tt_content.appearance">
+        <source>Appearance</source>
+      </trans-unit>
+
+      <!-- header -->
+      <trans-unit id="tt_content.header.label">
+        <source>Text</source>
+      </trans-unit>
+
+      <!-- header_layout -->
+      <trans-unit id="tt_content.header_layout.label">
+        <source>Heading type</source>
+      </trans-unit>
+
+      <!-- layout -->
+      <trans-unit id="tt_content.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <!-- frame_class -->
+      <trans-unit id="tt_content.frame_class.label">
+        <source>Frame</source>
+      </trans-unit>
+
+      <!-- space_before_class -->
+      <trans-unit id="tt_content.space_before_class.label">
+        <source>Space before</source>
+      </trans-unit>
+
+      <!-- space_after_class -->
+      <trans-unit id="tt_content.space_after_class.label">
+        <source>Space after</source>
+      </trans-unit>
+
+      <!-- header_position -->
+      <trans-unit id="tt_content.header_position.label">
+        <source>Header position</source>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>

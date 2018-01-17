@@ -1,0 +1,92 @@
+<html
+  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+
+  <div class="collapse" id="collapse{row.uid}">
+
+    <br>
+
+    <table class="table table-striped table-hover table-responsive">
+
+      <f:comment><!-- Info when "header" given --></f:comment>
+      <f:if condition="{row.header}">
+        <tr>
+          <td>
+            <div class="col-xs-12">
+              <span style="font-weight: bold; text-transform: uppercase">
+                <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.heading" />
+              </span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+              <strong>
+                <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.header.label" />:
+              </strong>
+              {row.header}
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+              <strong>
+                <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.header_layout.label" />:
+              </strong>
+              {row.header_layout}
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+              <strong>
+                <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.header_position.label" />:
+              </strong>
+              {row.header_position}
+            </div>
+          </td>
+        </tr>
+      </f:if>
+
+      <f:comment><!-- Appearance --></f:comment>
+      <tr>
+        <td>
+          <div class="col-xs-12">
+            <span style="font-weight: bold; text-transform: uppercase">
+              <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.appearance" />
+            </span>
+          </div>
+
+          <!-- LAYOUT -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <strong>
+              <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.layout.label" />:
+            </strong>
+            {row.layout}
+          </div>
+
+          <!-- FRAME -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <strong>
+              <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.frame_class.label" />:
+            </strong>
+            {row.frame_class}
+          </div>
+
+          <!-- SPACE_BEFORE -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <strong>
+              <img src="/typo3conf/ext/additional_information/Resources/Public/Icons/space-before.png" width="16" height="16" />
+              <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.space_before_class.label" />:
+            </strong>
+            {row.space_before_class}
+          </div>
+
+          <!-- SPACE_AFTER -->
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <strong>
+              <img src="/typo3conf/ext/additional_information/Resources/Public/Icons/space-after.png" width="16" height="16" />
+              <f:translate key="LLL:EXT:additional_information/Resources/Private/Language/locallang_db.xlf:tt_content.space_after_class.label" />:
+            </strong>
+            {row.space_after_class}
+          </div>
+        </td>
+      </tr>
+
+
+    </table>
+
+  </div>
+
+</html>

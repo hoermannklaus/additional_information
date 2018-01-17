@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "The extension provides additional information on a tt_content element in the backend. For backend editors it can be very annoying to open up eacy tt_content element to show the settings concerning space before or after as well as the layout. This extension shows an additional collapsible panel in the backend attached to each element. It can be collapsed to show these informations, without reloading the page properties page.",
+        "emConf": {
+            "category": "be",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": true,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "additional_information",
+        "name": "Additional Information",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "World-Direct Ebusiness Solutions Gmbh",
+                "email": "klaus.hoermann-engl@world-direct.at",
+                "name": "Klaus H\u00f6rmann-Engl",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "WorldDirect"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-01-15 02:49",
+        "extension_builder_version": "7.6.18",
+        "be_user": " (1)"
+    }
+}
