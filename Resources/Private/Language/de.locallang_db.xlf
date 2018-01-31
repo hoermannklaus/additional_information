@@ -11,39 +11,47 @@
       </trans-unit>
       <trans-unit id="tt_content.heading">
         <source>Heading</source>
+        <target>Überschrift</target>
       </trans-unit>
       <trans-unit id="tt_content.appearance">
         <source>Appearance</source>
+        <target>Erscheinungsbild</target>
       </trans-unit>
 
       <!-- header -->
       <trans-unit id="tt_content.header.label">
         <source>Text</source>
+        <target>Text</target>
       </trans-unit>
 
       <!-- header_layout -->
       <trans-unit id="tt_content.header_layout.label">
         <source>Heading type</source>
+        <target>Überschrift Typ</target>
       </trans-unit>
 
       <!-- frame_class -->
       <trans-unit id="tt_content.frame_class.label">
-        <source>Element width</source>
+        <source>Frame class</source>
+        <target>Rahmen Klasse</target>
       </trans-unit>
 
       <!-- space_before_class -->
       <trans-unit id="tt_content.space_before_class.label">
         <source>Space before</source>
+        <target>Abstand davor</target>
       </trans-unit>
 
       <!-- space_after_class -->
       <trans-unit id="tt_content.space_after_class.label">
         <source>Space after</source>
+        <target>Abstand danach</target>
       </trans-unit>
 
       <!-- header_position -->
       <trans-unit id="tt_content.header_position.label">
         <source>Header position</source>
+        <target>Überschrift Position</target>
       </trans-unit>
 
     </body>
