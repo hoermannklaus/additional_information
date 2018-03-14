@@ -59,8 +59,43 @@ class DrawItem implements \TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInte
   private function getExtendedView($parentObject, $row) {
     $fluidTmpl = GeneralUtility::makeInstance('TYPO3\CMS\Fluid\View\StandaloneView');
     $fluidTmpl->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName("typo3conf/ext/additional_information/Resources/Private/Templates/ExtendedView.html"));
+
+    // Assign labels for 'frame_class'
+    $row['frame_class'] = $this->getLabelForElement('frame_class', $row['frame_class']);
+
     $fluidTmpl->assign('row', $row);
     return $parentObject->linkEditContent($fluidTmpl->render(), $row);
+  }
+
+  /*
+   * Gets the label of a given field and field value.
+   *
+   * @param $fieldName
+   * @param $fieldValue
+   * @return string 
+   */
+  private function getLabelForElement($fieldName, $fieldValue) {
+    $label = LocalizationUtility::translate("tt_content.default", "additional_information");
+    $modTSconfig = $this->getTSconfig();
+    if ($fieldValue != "default") {
+      $label = $modTSconfig['properties']['tt_content.'][$fieldName . '.']['addItems.'][$fieldValue];
+      if (substr($label, 0, 4) === "LLL:") {
+        if (preg_match('/EXT:([a-zA-Z0-9_-]*)/', $label, $matches)) {
+          $label = LocalizationUtility::translate($label, $matches[1]);
+        }
+      }
+    }
+    return $label;
+  }
+
+  /*
+   * Returns the page TS config for the current BE user.
+   *
+   * @return array pageTSconfig
+   */
+  private function getTSconfig() {
+    $beUser = $GLOBALS['BE_USER'];
+    return $beUser->getTSConfig('TCEFORM', BackendUtility::getPagesTSconfig(0));
   }
 }
 ?>

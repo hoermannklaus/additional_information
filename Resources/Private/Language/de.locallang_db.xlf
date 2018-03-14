@@ -5,6 +5,10 @@
     <body>
 
       <!-- GENERAL -->
+      <trans-unit id="tt_content.default">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
       <trans-unit id="tt_content.backend.showExtendedInfos">
         <source>Show additional information</source>
         <target>Zusätzliche Informationen anzeigen</target>
