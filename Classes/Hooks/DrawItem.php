@@ -60,8 +60,10 @@ class DrawItem implements \TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInte
     $fluidTmpl = GeneralUtility::makeInstance('TYPO3\CMS\Fluid\View\StandaloneView');
     $fluidTmpl->setTemplatePathAndFilename(GeneralUtility::getFileAbsFileName("typo3conf/ext/additional_information/Resources/Private/Templates/ExtendedView.html"));
 
-    // Assign labels for 'frame_class'
+    // Assign labels for 'frame_class', 'space_before_class', 'space_after_class'
     $row['frame_class'] = $this->getLabelForElement('frame_class', $row['frame_class']);
+    $row['space_before_class'] = $this->getLabelForElement('space_before_class', $row['space_before_class']);
+    $row['space_after_class'] = $this->getLabelForElement('space_after_class', $row['space_after_class']);
 
     $fluidTmpl->assign('row', $row);
     return $parentObject->linkEditContent($fluidTmpl->render(), $row);
@@ -72,7 +74,7 @@ class DrawItem implements \TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInte
    *
    * @param $fieldName
    * @param $fieldValue
-   * @return string 
+   * @return string
    */
   private function getLabelForElement($fieldName, $fieldValue) {
     $label = LocalizationUtility::translate("tt_content.default", "additional_information");
